@@ -1,39 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body {
-    background-color: rgb(41, 41, 41);
+ 
+  
+    background:linear-gradient(rgb(25, 32, 31),rgb(10, 34, 23));
+    
+   
     color: aliceblue;
 }
 
-h1 {
-    font-family: sans-serif;
-    background-color: green;
-    padding: 20px;
-    margin: 0px;
-}
 
-h3 {
-    color: green;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-
-#dmenu {
-    background-color: rgb(255, 0, 0);
+#menu{
+    list-style-type: none;
+    padding: 0%;
+    background-color: rgb(29, 139, 78);
+    margin-bottom: 10px;
+}
+#menu li {
+    display: inline;
+}
+#menu li a  {
+    
+    color: rgb(255, 255, 255);
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
     display: inline-block;
-    padding: 5px 100%;
-    margin: 5px 5px 5px 0px;
-    border: 2px solid;
+}
+#menu li a:hover{
+    background-color: rgb(214, 134, 36);
 }
 
 #di {
-    background-color: rgb(119, 119, 119);
+   
+    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
+    
     display: inline-block;
-    margin: 5px 5px 5px 0px;
-    padding: 0% 12% 100% 1%;
-    border: 2px solid aliceblue;
-}
-
-#dii {
-    background-color: brown;
-    margin: 5px; 
-    padding: 0% 69% 100% 1%;
-    display: inline-block;
-    border: 2px solid aliceblue;
+    padding: 1px;
+    padding-left: 8px;
 }
