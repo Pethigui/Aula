@@ -57,6 +57,7 @@ body {
     width: 200px;
     background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
     padding: 20px;
+    font-size: 14px;
 }
 
 .lado-nav ul {
@@ -82,6 +83,95 @@ body {
     padding: 10px;
 }
 
+.cxPrincipal {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+}
 
+.copa {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px 20px;
+    width: 49.8%;
+}
+
+.jogando {
+    display: inline-block;
+    padding: 7px 20px;
+    width: 49.8%;
+}
+
+.apostasPrincipal button{
+    background-color: rgba(128, 128, 128, 0);
+    color: aliceblue;
+    font-size: 15px;
+    display: inline-block;
+    padding: 25px 60px 25px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.apostasPrincipal p {
+    color: rgb(0, 255, 0);
+    display: inline;
+}
+
+.jogos {
+    background-color: rgba(128, 128, 128, 0.603);
+    display: inline-block;
+    width: 250px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cxTimes {
+    width: 247px;
+    height: 100px;
+    margin-left: 2px;
+}
+
+.hor {
+    text-align: center;
+    font-size: 10px;
+}
+
+.times {
+    width: 60px;
+    height: 50px;
+    display: inline;
+    margin-top: 3px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.nomeTimes {
+    display: inline-block;
+    text-align: center;
+    width: 121.9px;
+    height: 25px;
+}
+
+.apostas button{
+    background-color: rgba(128, 128, 128, 0);
+    color: aliceblue;
+    font-size: 12px;
+    padding: 4px 26.7px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.apostas p {
+    color: rgb(0, 255, 0);
+    display: inline;
+}
+
+button:hover {
+    background-color: rgb(22, 51, 24);
+}
 
 
