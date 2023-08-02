@@ -169,9 +169,84 @@ body {
     color: rgb(0, 255, 0);
     display: inline;
 }
+#section5 .th{
+    column-gap: 50px;
+
+}
 
 button:hover {
     background-color: rgb(22, 51, 24);
 }
 
+
+.slider{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: sticky;
+  
+   }
+   .slides{
+     display: flex;
+     width: 400%;
+     height: 100%;
+   }
+   .slide{
+     width: 25%;
+     transition: 0.2s;
+   }
+   .slide img{
+     width: 100%;
+     height: 80%;
+     border-bottom: 1px solid rgb(28, 94, 77);
+  
+   }
+   .navigation-bar{
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     bottom: 21%;
+     transform: translate(-50%);
+     display: flex;
+   }
+   input{
+     display: none;
+   }
+   .manual-btn{
+     border: 2px solid ; 
+     border-color: aliceblue;
+     padding: 5px;
+     border-radius: 10px;
+     cursor: pointer;
+   }
+   .manual-btn:not(:last-child){
+     margin-right: 20px;
+   }
+ 
+   .manual-btn:hover{
+     background: #fff;
+     transition: 0.4s;
+ 
+   }
+ 
+   #radio1:checked ~ .first{
+     margin-left: 0%;
+   }
+   #radio2:checked ~ .first{
+     margin-left: -25%;
+   }
+   #radio3:checked ~ .first{
+     margin-left: -50%;
+   }
+   #radio4:checked ~ .first{
+     margin-left: -75%;
+   }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
