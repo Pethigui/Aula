@@ -238,7 +238,36 @@ button:hover {
    #radio4:checked ~ .first{
      margin-left: -75%;
    }
- 
+   footer{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    background-color: rgb(31, 32, 34);
+    border-top: 3px solid rgb(5, 177, 111);
+   }
+   footer .boxs{
+    width: 620px;
+    min-height: 150px;
+    padding: 20px;
+
+   }
+  
+   .boxs ul li{
+   list-style: none;
+
+   }
+   .boxs li{
+    color: rgb(104, 110, 109);
+   }
+   .imgseguranca{
+    display: flex;
+    margin-left: 123px;
+    height: 47px;
+    width: auto;
+   }
+   .rodape{
+    background-color:rgb(31, 32, 34) ;
+   }
  
  
  
