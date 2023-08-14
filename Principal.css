@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+/* Geral */
 *{
     font-family: 'Poppins', sans-serif;
 }
@@ -16,6 +17,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Menu superior */
 #menu{
     list-style-type: none;
     padding: 0%;
@@ -39,12 +41,7 @@ body {
     background-color: rgb(204, 132, 44);
 }
 
-.imag{
-    border: 0px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
+/* Menu lateral */
 .title {
     color: rgba(37, 179, 101, 0.925);;
 }
@@ -78,104 +75,7 @@ body {
     color: #007bff;
 }
 
-.principal-content {
-    flex: 1;
-    padding: 10px;
-}
-
-.cxPrincipal {
-    display: inline-block;
-    width: 100%;
-    height: 255px;
-}
-
-.copa {
-    display: inline-block;
-    font-size: 15px;
-    padding: 10px 20px 20px;
-    width: 49.8%;
-}
-
-.jogando {
-    display: inline-block;
-    padding: 7px 20px;
-    width: 49.8%;
-}
-
-.apostasPrincipal button{
-    background-color: rgba(128, 128, 128, 0);
-    color: aliceblue;
-    font-size: 15px;
-    display: inline-block;
-    padding: 25px 60px 25px 20px;
-    border: none;
-    cursor: pointer;
-    margin-left: 1px;
-}
-
-.apostasPrincipal p {
-    color: rgb(0, 255, 0);
-    display: inline;
-}
-
-.jogos {
-    background-color: rgba(128, 128, 128, 0.603);
-    display: inline-block;
-    width: 22.9%;
-    height: 130px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.cxTimes {
-    width: 100%;
-    height: 100px;
-    margin-left: 3px;
-}
-
-.hor {
-    text-align: center;
-    font-size: 10px;
-}
-
-.times {
-    width: 60px;
-    height: 50px;
-    display: inline;
-    margin-top: 3px;
-    margin-left: 28px;
-    margin-right: 28px;
-}
-
-.nomeTimes {
-    display: inline-block;
-    text-align: center;
-    width: 121.9px;
-    height: 25px;
-}
-
-.apostas button{
-    background-color: rgba(128, 128, 128, 0);
-    color: aliceblue;
-    font-size: 12px;
-    padding: 4px 26.7px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 1px;
-}
-
-.apostas p {
-    color: rgb(0, 255, 0);
-    display: inline;
-}
-
-
-button:hover {
-    background-color: rgb(22, 51, 24);
-}
-
-
+/* Slider */
 .slider{
     width: auto;
     height: auto;
@@ -243,6 +143,275 @@ input{
     margin-left: -75%;
 }
 
+/* Main do código */
+.principal-content {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Principal jogo */
+.cxPrincipal {
+    display: inline-block;
+    width: 100%;
+    height: 255px;
+}
+
+.copa {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px 20px;
+    width: 49.8%;
+}
+
+.jogando {
+    display: inline-block;
+    padding: 7px 20px;
+    width: 49.8%;
+}
+
+.apostasPrincipal button{
+    background-color: rgba(128, 128, 128, 0);
+    color: aliceblue;
+    font-size: 15px;
+    display: inline-block;
+    padding: 25px 60px 25px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.apostasPrincipal p {
+    color: rgb(0, 255, 0);
+    display: inline;
+}
+
+/* Caixas de jogos */
+.linhaJogos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.jogos {
+    background-color: rgba(128, 128, 128, 0.603);
+    display: grid;
+    width: 25%;
+    height: 130px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cxTimes {
+    width: 100%;
+    height: 80px;
+    margin-left: 3px;
+}
+
+.hor {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
+
+.linhaTimes {
+    display: block;
+    width: 100%;
+    height: 55%;
+}
+
+.times {
+    width: 48%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.linhaNomeTimes {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+.nomeTimes {
+    display: inline-flex;
+    text-align: center;
+    width: 48%;
+    height: 50%;
+    justify-content: center;
+}
+
+.linhaApostas {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.apostas {
+    display: inline-flex;
+    width: 30%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.apostas button{
+    background-color: rgba(128, 128, 128, 0);
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.apostas p {
+    color: rgb(0, 255, 0);
+    display: inline;
+}
+
+
+button:hover {
+    background-color: rgb(22, 51, 24);
+}
+
+/* Jogos ao vivo */
+.aovivo {
+    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.aovivoTitulo {
+    background-color: rgba(116, 116, 116, 0.199);
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+.aovivoEsporte {
+    display: flex;
+    width: 58.7%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.aovivoX {
+    display: flex;
+    width: 41.3%;
+    font-size: 14px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid rgba(87, 87, 87, 0.329);
+}
+
+.aovivoCx {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgba(87, 87, 87, 0.308);
+}
+
+.aovivoTimes {
+    display: inline-block;
+    width: 49.4%;
+    height: 65%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.aovivoPlacar {
+    display: inline-block;
+    width: 49.4%;
+    height: 65%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+    text-align: end;
+}
+
+.aovivoHora {
+    display: block;
+    width: 49.4%;
+    height: 32%;
+    padding-left: 20px;
+    font-size: 10px;
+}
+ 
+.aovivoBotoes {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+}
+ 
+.aovivoBotoes button {
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    display: inline;
+    width: 32.7%;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.aovivoBotoes button:hover {
+    background-color: black;
+}
+
+/* Tabela de jogos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(87, 87, 87, 0.308);
+    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
+}
+
+th, td {
+    border: 1px ;
+    text-align: center;
+    width: 14.3%;
+    height: 50px;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.botao button{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0);
+
+}
+.botao button:hover {
+    background-color: black;
+}
+
+
+/* Rodapé (footer) */
 footer{
     width: 100%;
     min-height: 50px;
@@ -275,139 +444,4 @@ footer .boxs{
 .rodape{
     background-color:rgb(31, 32, 34) ;
 }
- 
-.aovivo {
-    background-color: #007bff;
-    display: block;
-    width: 100%;
-    height: 300px;
-}
 
-.linha {
-    background-color: aqua;
-    display: block;
-    width: 100%;
-    height: 30%;
-    border: 1px solid rgb(87, 87, 87);
-}
-
-.aovivoCx {
-    background-color: brown;
-    display: inline-block;
-    width: 55%;
-    height: 100%;
-    border-right: 1px solid rgb(87, 87, 87);
-}
-
-.aovivoTimes {
-    background-color: blueviolet;
-    display: inline-block;
-    width: 49.4%;
-    height: 65%;
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 13px;
-}
-
-.aovivoPlacar {
-    background-color: chartreuse;
-    display: inline-block;
-    width: 49.4%;
-    height: 65%;
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 13px;
-    text-align: end;
-}
-
-.aovivoHora {
-    background-color: chocolate;
-    display: block;
-    width: 49.4%;
-    height: 32%;
-    padding-left: 20px;
-    font-size: 10px;
-}
- 
-.aovivoBotoes {
-    background-color: darkblue;
-    display: inline-block;
-    width: 485px;
-    height: 75px;
-}
- 
-.aovivoBotoes button {
-    background-color: #fff;
-    display: inline;
-    width: 32.7%;
-    height: 60px;
-    text-align: center;
-}
- 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid gray;
-    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
-}
-
-th, td {
-    border: 1px ;
-    text-align: center;
-    width: 14.3%;
-    height: 50px;
-    padding: 8px;
-}
-
-th {
-    font-weight: bold;
-}
-
-.botao button{
-    width: 100%;
-    height: 100%;
-    color: aliceblue;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgba(128, 128, 128, 0);
-
-}
-.botao button:hover {
-    background-color: black;
-}
-
-footer{
-    width: 100%;
-    min-height: 50px;
-    display: flex;
-    background-color: rgb(31, 32, 34);
-    border-top: 3px solid rgb(5, 177, 111);
-}
-   
-footer .boxs{
-    width: 620px;
-    min-height: 150px;
-    padding: 20px;
-}
-
-.boxs ul li{
-   list-style: none;
-}
-   
-.boxs li{
-    color: rgb(104, 110, 109);
-}
-   
-.imgseguranca{
-    display: flex;
-    margin-left: 123px;
-    height: 47px;
-    width: auto;
-}
-   
-.rodape{
-    background-color:rgb(31, 32, 34) ;
-}
