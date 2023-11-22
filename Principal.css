@@ -20,26 +20,52 @@ body {
 /* Menu superior */
 #menu{
     list-style-type: none;
-    padding: 0%;
+    padding: 0px;
     background:linear-gradient(rgba(28, 190, 63, 0.829),rgba(29, 110, 74, 0.644));
-    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+#menu p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
 }
 
 #menu li {
-    display: inline;
+    float: left;
+    margin-bottom: 0px;
 }
 
-#menu li a  {
+#menu li a {
     color: rgb(255, 255, 255);
-    display: inline;
     text-decoration: none;
-    padding: 10px;
-    display: inline-block;
+    display: block; 
+    border-radius: 50px;
 }
 
-#menu li a:hover{
+#menu li a:hover {
     background-color: rgb(204, 132, 44);
 }
+
+#menu li.destacado {
+    margin-right: 250px; 
+    padding: 0px 1px; 
+}
+
+#menu li.destacado a {
+    padding: 0px 20px;
+}
+
+#menu li.destacado a:hover {
+    background-color: black;
+}
+
+#menu li.menu-item a {
+    padding: 20px; 
+    margin-top: 15px;
+}
+
+
 
 /* Menu lateral */
 .title {
