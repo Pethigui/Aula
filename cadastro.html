@@ -9,42 +9,46 @@
 <body>
         <div class="formulario">
             <h2>Criar Conta</h2>
+
+            <script src="cadastro.js"></script>
             
             <form>
                 <div class="dados">
-                    <label for="nome"> Nome Completo</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome completo">
+                    <label for="nome" id="nome"> Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" onfocus="mudarElemento('nome');" onblur="voltarElemento('nome');">
                 </div>
 
                 <div class="dados">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite o seu email" >
+                    <label for="email" id="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o seu email" onfocus="mudarElemento('email');" onblur="voltarElemento('email');">
 
-                    <div class="dados">
-                        <label for ="cpf"> CPF</label>
-                        <input type="text" id="cpf" placeholder="Digite seu numero de CPF">
-                    </div>
                 <div class="dados">
-                    <label for ="data de nascimento"> Data de nascimento</label>
-                    <input type="date" id="data" placeholder="Digite seu nome completo">
+                    <label for ="cpf" id="cpf"> CPF</label>
+                    <input type="text" id="cpf" placeholder="Digite seu numero de CPF" onfocus="mudarElemento('cpf');" onblur="voltarElemento('cpf');">
                 </div>
+
                 <div class="dados">
-                    <label for ="usuario"> Usuario</label>
-                    <input type="text" id="usuario" placeholder="Crie um nome de usuario">
+                    <label for ="data de nascimento" id="data"> Data de nascimento</label>
+                    <input type="date" id="data" placeholder="Digite seu nome completo" onfocus="mudarElemento('data');" onblur="voltarElemento('data');">
+                </div>
+
+                <div class="dados">
+                    <label for ="usuario" id="usuario"> Usuario</label>
+                    <input type="text" id="usuario" placeholder="Crie um nome de usuario" onfocus="mudarElemento('usuario');" onblur="voltarElemento('usuario');">
                 </div>
 
                 <div class="senha">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha" >
+                    <label for="senha" id="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" onfocus="mudarElemento('senha');" onblur="voltarElemento('senha');">
                 </div>
 
                 <div class="senha">
-                    <label for="Confirmar senha">Confirmar Senha</label>
-                    <input type="password" id="Confirmar senha" placeholder="Confirme sua senha" >
+                    <label for="Confirmar senha" id="Confirmar senha">Confirmar Senha</label>
+                    <input type="password" id="Confirmar senha" placeholder="Confirme sua senha" onfocus="mudarElemento('Confirmar senha');" onblur="voltarElemento('Confirmar senha');">
                 </div>
 
                 <div class="dados">
-                    <button><a href="Principal.html">Cadastra-se na IFBET</a></button>
+                    <button id="btnCadastro" onmouseover="mudarBtn();" onmouseout="voltarBtn();"><a href="Principal.html">Cadastra-se na IFBET</a></button>
                 </div>
 
             </form>
