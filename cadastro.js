@@ -20,3 +20,19 @@ function voltarBtn(){
     document.getElementById('btnCadastro').style.backgroundColor = "rgb(32, 138, 67)";
     document.getElementById('nomebtn').style.fontSize = "16px";
 }
+
+function validarEmail() {
+    var email = document.getElementById('emailInput').value;
+    var valido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    document.getElementById('resultado').innerHTML = valido ? 'E-mail valido' : 'E-mail invalido';
+    document.getElementById('resultado').className = valido ? 'valid' : 'invalid';
+}
+
+function validarCPF() {
+    var cpf = document.getElementById('cpfInput').value;
+    var valido = /^\d{11}$/.test(cpf);
+
+    document.getElementById('resultadocpf').innerHTML = valido ? 'CPF valido' : 'CPF invalido';
+    document.getElementById('resultadocpf').className = valido ? 'valid1' : 'invalid1';
+}
