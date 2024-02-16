@@ -2,9 +2,71 @@
 <html>
 <head>
     <title>IFBET</title>
+    <link rel="shortcut icon" href="imagens/Icon.png" type="image/x-icon">
     <link rel="stylesheet" href="Principal.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <script src="Slide.js"></script>
+    <style>
+    .swal2-popup {
+        border-radius: 60px;
+        border: 3px solid #1cb01f;
+        width: 354px;
+        height: 378px;
+        background-color: rgb(213, 241, 188);
+    }
+    .custom-icon {
+        width: 82px; 
+        height: 82px; 
+        background-color: #118315;
+        border-radius: 40px;
+    }
+    .swal2-icon {
+        margin: 0.5em auto -2.3999999999999986em;
+    }
+    .swal2-styled.swal2-confirm {
+        background-color: #2c9705dc;
+    }
+    .swal2-styled.swal2-cancel {
+        background-color: #970505dc;
+    }
+    .swal2-title{
+        color: #f90000d3;
+    }
+</style>
 </head>
 <body>
+<script>
+$(document).ready(function(){
+Swal.fire({
+title: 'Atenção!!!' ,
+text: 'Para prosseguir é necessário ter mais de 18 anos, voçê tem mais que 18 anos de idade?',
+showCancelButton: true,
+confirmButtonText: 'Sim',
+cancelButtonText: 'Não',
+iconHtml: '<img src="imagens/Logo.jpg" class="custom-icon">',
+
+})
+.then((result) => {
+if (result.isConfirmed) {
+showInsertAlert();
+} else {
+Swal.fire({
+icon: 'error',
+title: 'Oops...',
+text: 'Você deve ter mais de 18 anos para prosseguir!'
+});
+}
+});
+
+function showInsertAlert() {
+Swal.fire({
+icon: 'success',
+title: 'Bom jogo!!!',
+});
+}
+});
+</script>
     <!-- Menu Superior -->
     <ul id="menu">
         <li class="destacado"><a href="Principal.html"><img src="imagens/Logo.jpg" alt="Logo" width="125px"></a></li>
