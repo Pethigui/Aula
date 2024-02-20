@@ -5,27 +5,37 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Vidio de fundo */
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+
+/* Estrura do formulario */
 body{
-    background:linear-gradient(rgb(32, 32, 32),rgb(17, 72, 35));
- 
     display: flex;
     justify-content: center;
     padding: 20px;
-    
 }
+
 .senha{
     width: 50%;
     float: left;
     padding-right: 15px;
 }
 
-
-
 .formulario{
-    background-color: rgba(247, 244, 244, 0.596);
-    padding: 30px 40px;
+    background-color: rgba(247, 244, 244, 0.381);
+    padding: 0px 40px;
     width: 50%;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 20px 20px 20px;
 }
 .formulario h2{
     font-size: 30px;

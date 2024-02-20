@@ -48,7 +48,7 @@ body {
 }
 
 #menu li.destacado {
-    margin-right: 250px; 
+    margin-right: 0px; 
     padding: 0px 1px; 
 }
 
@@ -72,13 +72,13 @@ body {
     color: rgba(37, 179, 101, 0.925);;
 }
 
-.di{
+.container {
     display: flex;
 }
 
 .lado-nav {
     width: 200px;
-    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.404));
+    background: linear-gradient(rgb(32, 32, 32), rgba(32, 138, 67, 0.404));
     padding: 20px;
     font-size: 14px;
 }
@@ -87,44 +87,45 @@ body {
     list-style: none;
     padding: 0;
 }
-  
+
 .lado-nav li {
     margin-bottom: 10px;
 }
-  
+
 .lado-nav a {
     text-decoration: none;
     color: aliceblue;
 }
-  
+
 .lado-nav a:hover {
     color: #007bff;
 }
 
 /* Slider */
-.slider{
-    width: auto;
+.slider {
+    width: calc(100% - 200px); /* Ajuste conforme necessário */
     height: auto;
     overflow: hidden;
-    position: sticky;
+    position: relative; /* Alterado de 'sticky' para 'relative' */
 }
 
-.slides{
+.slides {
     display: flex;
-    width: 400%;
+    width: 400%; /* Ajuste conforme necessário */
     height: 100%;
 }
 
-.slide{
+.slide {
     width: 25%;
     transition: 0.2s;
 }
 
-.slide img{
+.slide img {
     width: 100%;
-    height: 80%;
-    border-bottom: 1px solid rgb(28, 94, 77);  
+    height: 100%;
+    border-bottom: 1px solid rgb(28, 94, 77);
 }
+
 
 .navigation-bar{
     position: absolute;
@@ -221,10 +222,11 @@ input{
 .jogos {
     background-color: rgba(128, 128, 128, 0.603);
     display: grid;
-    width: 25%;
-    height: 130px;
-    border-radius: 10px;
-    margin: 10px;
+    width: 20%;
+    height: 144px;
+    border-radius: 18px;
+    margin: 29px;
+    padding-right: 20px;
 }
 
 .cxTimes {

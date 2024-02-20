@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  /* cor de fundo/Definições de estrutura */
+  main {
+    padding: 20px;
+    background:linear-gradient(rgb(32, 32, 32),rgba(32, 138, 67, 0.445));
+    margin: 20px;
+    border: 1px solid rgba(0, 255, 0, 0.461);
+    border-radius: 20px;
+  }
+  
+  main h2 {
+    text-align: center;
+    padding: 10px;
+    background:linear-gradient(rgba(33, 225, 19, 0.541),rgba(29, 110, 74, 0.644));
+    color: white;
+    border-radius: 25px;
+  }
+  
+  main a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+  }
+  
+  main a:hover {
+    text-decoration: underline;
+  }
+
+/* Espaços dos menbros */
+
+.members-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
+
+.member {
+    flex: 0 0 calc(20% - 20px); 
+    margin: 10px;
+}
+.member2 {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    padding-top: 0px;
+}
+.member3 {
+    flex: 0 0 calc(5% - 20px); 
+    margin: 10px; 
+    padding-top: 5px;
+}
+
+/* Ajuste das imagens */
+.member img {
+    max-width: 100%;
+    height: auto;
+}
+.member-info1{
+    margin-left: 50px;
+    padding-top: 0px;
+}
+.member-info2{
+    margin-left: 1px;
+    padding-top: 35px;
+}
+.member-info3{
+    margin-top: 22px;
+    padding-top: 9px;
+}

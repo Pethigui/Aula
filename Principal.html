@@ -4,38 +4,44 @@
     <title>IFBET</title>
     <link rel="shortcut icon" href="imagens/Icon.png" type="image/x-icon">
     <link rel="stylesheet" href="Principal.css">
+    <link rel="shortcut icon" href="imagens/Logo.jpg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="Slide.js"></script>
+     
+<!-- CSS embutido responsavel pela estrutura do alert -->
     <style>
-    .swal2-popup {
-        border-radius: 60px;
-        border: 3px solid #1cb01f;
-        width: 354px;
-        height: 378px;
-        background-color: rgb(213, 241, 188);
-    }
-    .custom-icon {
-        width: 82px; 
-        height: 82px; 
-        background-color: #118315;
-        border-radius: 40px;
-    }
-    .swal2-icon {
-        margin: 0.5em auto -2.3999999999999986em;
-    }
-    .swal2-styled.swal2-confirm {
-        background-color: #2c9705dc;
-    }
-    .swal2-styled.swal2-cancel {
-        background-color: #970505dc;
-    }
-    .swal2-title{
-        color: #f90000d3;
-    }
-</style>
+        .swal2-popup {
+            border-radius: 60px;
+            border: 3px solid #1cb01f;
+            width: 354px;
+            height: 378px;
+            background-color: rgb(213, 241, 188);
+        }
+        .custom-icon {
+            width: 82px; 
+            height: 82px; 
+            background-color: #118315;
+            border-radius: 40px;
+        }
+        .swal2-icon {
+            margin: 0.5em auto -2.3999999999999986em;
+        }
+        .swal2-styled.swal2-confirm {
+            background-color: #2c9705dc;
+        }
+        .swal2-styled.swal2-cancel {
+            background-color: #970505dc;
+        }
+        .swal2-title{
+            color: #f90000d3;
+        }
+    </style>
+
 </head>
 <body>
+
+<!-- JavaScript responsavel pela estrutura do alert -->
 <script>
 $(document).ready(function(){
 Swal.fire({
@@ -67,63 +73,65 @@ title: 'Bom jogo!!!',
 }
 });
 </script>
+
     <!-- Menu Superior -->
     <ul id="menu">
         <li class="destacado"><a href="Principal.html"><img src="imagens/Logo.jpg" alt="Logo" width="125px"></a></li>
         <li class="menu-item"><a href="#"><p>Esportes</p></a></li>
         <li class="menu-item"><a href="aovivo.html"><p>Ao-vivo</p></a></li>
         <li class="menu-item"><a href="#"><p>Esportes Virtuais</p></a></li>
-        <li class="menu-item" style="float:right"><a href="#"><p>CONTATO</p></a></li>
+        <li class="menu-item" style="float:right"><a href="Sobre.html"><p>Sobre</p></a></li>
         <li class="menu-item" style="float:right"><a href="Cadastro.html"><p>Registre-se</p> </a></li>
     </ul>
  
-    <!-- Menu Lateral -->
-    <div class="di">
-        
-        <nav class="lado-nav">
-          <ul>
-            <li><h1 class="title">Populares</h3></li>
-            <li><a href="#section1">Copa Libertadores</a></li>
-            <li><a href="#section2">Brasileirão Série A</a></li>
-            <li><a href="#section3">Brasileirão Série B</a></li>
-            <li><h1 class="title">Esportes</h3></li>
-            <li><a href="#section4">Jogos Ao Vivo</a></li>
-            <li><a href="#section5">Tabela de Apostas</a></li>
-            <li><a href="#section6">Rodapé</a></li>
-          </ul>
-        </nav>
-
-        <!-- Main do código -->
-        <main class="principal-content">
-            <!-- Slider -->
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn"  id="radio1" >
-                    <input type="radio" name="radio-btn"  id="radio2">
-                    <input type="radio" name="radio-btn"  id="radio3">
-                    <input type="radio" name="radio-btn"  id="radio4">
-        
-                    <div class="slide first"> <img src="imagens/imagem1.png" alt="Imagem 1"></div>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <div class="lado-nav">
+            <ul>
+                <li><h1 class="title">Populares</h1></li>
+                <li><a href="#section1">Copa Libertadores</a></li>
+                <li><a href="#section2">Brasileirão Série A</a></li>
+                <li><a href="#section3">Brasileirão Série B</a></li>
+                <li><h1 class="title">Esportes</h1></li>
+                <li><a href="#section4">Jogos Ao Vivo</a></li>
+                <li><a href="#section5">Tabela de Apostas</a></li>
+                <li><a href="#section6">Rodapé</a></li>
+            </ul>
+        </div>
+    
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn"  id="radio1" >
+                <input type="radio" name="radio-btn"  id="radio2">
+                <input type="radio" name="radio-btn"  id="radio3">
+                <input type="radio" name="radio-btn"  id="radio4">
+    
+                <div class="slide first"> <img src="imagens/imagem1.png" alt="Imagem 1"></div>
                     <div class="slide">   <img src="imagens/imagem 2.png" alt="Imagem 1"></div>
                     <div class="slide">   <img src="imagens/imagem 3.png" alt="Imagem 1"></div>
                     <div class="slide">   <img src="imagens/imagem4.png" alt="Imagem 1"></div>
-                
-                    <div class="navigation-bar">
-                      <label class="manual-btn" for="radio1"></label>
-                      <label class="manual-btn" for="radio2"></label>
-                      <label class="manual-btn" for="radio3"></label>
-                      <label class="manual-btn" for="radio4"></label>
-                    </div>
-                  </div>
+
+                <div class="navigation-bar">
+                    <label class="manual-btn" for="radio1"></label>
+                    <label class="manual-btn" for="radio2"></label>
+                    <label class="manual-btn" for="radio3"></label>
+                    <label class="manual-btn" for="radio4"></label>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+<br> 
+<h3 style="padding-left: 1%;"> Confira os melhores jogos do momento:</h3>
+<br>
 
+<!-- Principal jogo -->
             <hr style="border-color: rgb(0, 255, 0);">
-
-            <!-- Principal jogo -->
             <section id="section1">
                 <div class="cxPrincipal">
                     <div class="copa">Copa Libertadores</div>
-                    <div class="copa" style="text-align: end;"> 45:00</div>
+                    <div class="copa" style="text-align: end; color: rgba(255, 0, 0, 0.817);"> 45:00</div>
                     <div class="jogando">
                         <img src="imagens/Palmeiras.png" alt="jj" width="30px">
                         <div class="jogando">

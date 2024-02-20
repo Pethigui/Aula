@@ -1,3 +1,5 @@
+/* Slides auto... */
+
 function autoSlide() {
     let slides = document.querySelectorAll('.slide');
     let radioButtons = document.querySelectorAll('[name="radio-btn"]');
