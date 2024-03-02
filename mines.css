@@ -1,0 +1,113 @@
+#campo {
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#deposito {
+    width: 60%;
+    margin: 20px 20%;
+    height: 110px;
+    text-align: center;
+    padding: 0px;
+    background-color: aliceblue;
+    border: 5px solid;
+    border-radius: 100px;
+}
+
+#saldo {
+    display: flex;
+    width: 40%;
+    margin: 0px 0% 30px 30%;
+    height: 60px;
+    padding: 13px 70px;
+    background-color: aliceblue;
+    border: 4px solid;
+    color: black;
+    border-color: #1cb01f;
+}
+
+#saldoAtual {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    margin: 1% 0% 0% 25%;
+    border-radius: 100px;
+    padding-left: 15px;
+}
+
+.celula {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #1cb01f;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    background: url('imagens/LogoS.png') center/cover;
+    background-size: contain;
+}
+
+.celula.revelar {
+    background-color: aliceblue;
+}
+
+#apostas {
+    display: flex;
+}
+
+#saque {
+    width: 30%;
+    margin: 0px 0% 30px 19%;
+    height: 90px;
+    text-align: center;
+    padding: 0px;
+    background-color: rgba(29, 110, 74, 0.644);
+    border: 4px solid;
+    border-radius: 100px;
+}
+
+#valorSaque {
+    width: 50%;
+    height: 40%;
+    background-color: rgba(14, 56, 37, 0.647);
+    margin: 1% 0% 0% 25%;
+    border-radius: 100px;
+}
+
+#aposta {
+    width: 30%;
+    margin: 0px 0% 30px 2%;
+    height: 90px;
+    padding: 0px;
+    background-color: black;
+    border: 4px solid;
+    border-radius: 100px;
+}
+
+#controleAposta {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#valorAposta {
+    width: 50%;
+    height: 40%;
+    background-color: rgb(22, 22, 22);
+    margin: 1% 0% 0% 6%;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.apostar {
+    width: 8%;
+    height: 40%;
+    background-color: rgb(22, 22, 22);
+    border-radius: 100px;
+    margin: 1% 0% 0% 5%;
+    padding: 1% 0% 0% 3%;
+}
