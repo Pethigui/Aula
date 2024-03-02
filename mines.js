@@ -16,7 +16,7 @@ function mudarDeposito(){
 }
 
 function voltarDeposito(){
-    document.getElementById('deposito').style.backgroundColor = "aliceblue";
+    document.getElementById('deposito').style.backgroundColor = "rgba(240, 248, 255, 0.5)";
 }
 
 
