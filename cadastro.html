@@ -17,38 +17,38 @@
 
             <script src="cadastro.js"></script>
             
-            <form>
+            <form method="get" action="cadastro.php">
                 <div class="dados">
                     <label for="nome" id="nome"> Nome Completo</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome completo" onfocus="mudarElemento('nome');" onblur="voltarElemento('nome');" >
+                    <input type="submit" name="nome" id="nome" placeholder="Digite o seu nome completo" onfocus="mudarElemento('nome');" onblur="voltarElemento('nome');" >
                     
                 </div>
 
                 <div class="dados">
                     <label for="email" id="email">E-mail</label>
-                    <input type="email" id="emailInput" oninput="validarEmail()" placeholder="Digite o seu email" onfocus="mudarElemento('email');" onblur="voltarElemento('email');">
+                    <input type="submit" name="email" id="emailInput" oninput="validarEmail()" placeholder="Digite o seu email" onfocus="mudarElemento('email');" onblur="voltarElemento('email');">
                     <p id="resultado"></p>
 
                 <div class="dados">
                     <label for ="cpf" id="cpf"> CPF</label>
-                    <input type="text" id="cpfInput" oninput="validarCPF()" placeholder="Digite seu numero de CPF"  onfocus="mudarElemento('cpf');" onblur="voltarElemento('cpf');">
+                    <input type="submit" name="cpf" id="cpfInput" oninput="validarCPF()" placeholder="Digite seu numero de CPF"  onfocus="mudarElemento('cpf');" onblur="voltarElemento('cpf');">
                     <p id="resultadocpf"></p>
                 </div>
                 
 
                 <div class="dados">
                     <label for ="data de nascimento" id="data"> Data de nascimento</label>
-                    <input type="date" id="data" placeholder="Digite seu nome completo" onfocus="mudarElemento('data');" onblur="voltarElemento('data');">
+                    <input type="submit" name="dtNascimento" id="data" placeholder="Digite seu nome completo" onfocus="mudarElemento('data');" onblur="voltarElemento('data');">
                 </div>
 
                 <div class="dados">
                     <label for ="usuario" id="usuario"> Usuario</label>
-                    <input type="text" id="usuario" placeholder="Crie um nome de usuario" onfocus="mudarElemento('usuario');" onblur="voltarElemento('usuario');">
+                    <input type="submit" name="usuario" id="usuario" placeholder="Crie um nome de usuario" onfocus="mudarElemento('usuario');" onblur="voltarElemento('usuario');">
                 </div>
 
                 <div class="senha">
                     <label for="senha" id="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha" onfocus="mudarElemento('senha');" onblur="voltarElemento('senha');">
+                    <input type="submit" name="senha" id="senha" placeholder="Digite sua senha" onfocus="mudarElemento('senha');" onblur="voltarElemento('senha');">
                 </div>
 
                 <div class="senha">
