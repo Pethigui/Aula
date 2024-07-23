@@ -17,22 +17,20 @@
 
             <script src="cadastro.js"></script>
             
-            <form method="get" action="cadastro.php">
+            <form method="get" action="dados.php">
                 <div class="dados">
                     <label for="nome" id="nome"> Nome Completo</label>
                     <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo" onfocus="mudarElemento('nome');" onblur="voltarElemento('nome');" >
-                    <input type="submit" value="enviar">
-                    
                 </div>
 
                 <div class="dados">
                     <label for="email" id="email">E-mail</label>
-                    <input type="text" name="email" id="emailInput" oninput="validarEmail()" placeholder="Digite o seu email" onfocus="mudarElemento('email');" onblur="voltarElemento('email');">
+                    <input type="text" name="email" id="emailInput" placeholder="Digite o seu email" onfocus="mudarElemento('email');" onblur="voltarElemento('email');">
                     <p id="resultado"></p>
 
                 <div class="dados">
-                    <label for ="cpf" id="cpf"> CPF</label>
-                    <input type="number" name="cpf" id="cpfInput" oninput="validarCPF()" placeholder="Digite seu numero de CPF"  onfocus="mudarElemento('cpf');" onblur="voltarElemento('cpf');">
+                    <label for="cpf" id="cpf"> CPF</label>
+                    <input type="number" name="cpf" id="cpfInput" placeholder="Digite seu numero de CPF"  onfocus="mudarElemento('cpf');" onblur="voltarElemento('cpf');">
                     <p id="resultadocpf"></p>
                 </div>
                 
@@ -49,7 +47,7 @@
 
                 <div class="senha">
                     <label for="senha" id="senha">Senha</label>
-                    <input type="text" name="senha" id="senha" placeholder="Digite sua senha" onfocus="mudarElemento('senha');" onblur="voltarElemento('senha');">
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" onfocus="mudarElemento('senha');" onblur="voltarElemento('senha');">
                 </div>
 
                 <div class="senha">
@@ -58,7 +56,7 @@
                 </div>
 
                 <div class="dados">
-                    <button id="btnCadastro" onmouseover="mudarBtn();" onmouseout="voltarBtn();"><a id="nomebtn" href="Principal.html">Cadastra-se na IFBET</a></button>
+                    <input type="submit" id="btnCadastro" class="btn-cadastro" value="Cadastra-se na IFBET" onmouseover="mudarBtn();" onmouseout="voltarBtn();">
                 </div>
 
             </form>
